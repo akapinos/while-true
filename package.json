@@ -1,0 +1,33 @@
+{
+  "name": "while-true",
+  "version": "1.0.0",
+  "description": "Valentine's day demo using Three.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express",
+    "three"
+  ],
+  "author": {
+    "name": "Alexey Kapinos",
+    "email": "art.harakiri@gmail.com",
+    "url": "https://github.com/akapinos"
+  },
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "browserify": "^17.0.0",
+    "browserify-shader": "^0.1.2",
+    "gulp": "^4.0.2",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^3.0.2",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}
