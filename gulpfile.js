@@ -14,7 +14,7 @@ gulp.task('connect', () => {
     });
 });
 
-gulp.task("build", function() {
+gulp.task("build", () => {
   return browserify({
     entries: "./js/main.js",
     extensions: [".js"],
@@ -22,6 +22,7 @@ gulp.task("build", function() {
   })
     .bundle()
     .pipe(source("all.js"))
+    .pipe(streamify(uglify()))
     .pipe(gulp.dest("dist/"));
 });
 
