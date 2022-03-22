@@ -7,11 +7,11 @@ const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 
 gulp.task('connect', () => {
-    browserSync.init({
+  browserSync.init({
     watch: true,
     port: 8000,
     server: './dist'
-    });
+  });
 });
 
 gulp.task("build", () => {
@@ -32,5 +32,4 @@ gulp.task('watch', () => {
   gulp.watch('app/*.html').on('change', browserSync.reload);
 });
 
-gulp.task('default', gulp.series('build',
-				 gulp.parallel('connect', 'watch')));
+gulp.task('default', gulp.series('build', gulp.parallel('connect', 'watch')));
